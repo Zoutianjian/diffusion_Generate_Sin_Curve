@@ -1,5 +1,5 @@
 # diffusion_Generate_Sin_Curve
-A simple Demo, using diffusion model (U-Net Stable) to generate sin curves
+A simple Demo, using diffusion model (U-Net Stable) to generate 1-D sin curves
 
 ## requirments
 python >= 3.7
