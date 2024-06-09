@@ -234,5 +234,5 @@ for i in range(dataNums):
     plt.plot(np.reshape(targetData[i],-1),label='targetData%d'%(i))
     
 plt.legend()
-plt.savefig("./Ball_Points/Sin.png",bbox_inches='tight',dpi = 600)
+plt.savefig("./Model_Tests/Sin.png",bbox_inches='tight',dpi = 600)
 a = 1
