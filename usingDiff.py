@@ -174,7 +174,7 @@ class DiffusionSin(nn.Module):
 device = 'cuda:2'
 mainModel = DiffusionSin(
     LayerNum=4,initialLayers=32,finalLayers=32,outputDimList=[32,64,96,128])
-modelPath = './Model_Tests/diffEmbedPeriod_7.pt'
+modelPath = './Model_Tests/diffEmbedPeriod_Test.pt'
 try:
     mainModel.load_state_dict(torch.load(modelPath)) # 单卡训练出来的模型
 except:
@@ -227,8 +227,8 @@ sinReal = torch.sin(torch.arange(512)*(2*(np.pi))/periodMin).cpu().numpy()
 plt.cla()
 # plt.plot(noiseCompare,color='orange')
 # plt.plot(sinReal,color='green')
-for i in range(dataNums):
-    plt.plot(np.reshape(fillBlankData[i],-1),label='filledTensor%d'%(i))
+# for i in range(dataNums):
+#     plt.plot(np.reshape(fillBlankData[i],-1),label='filledTensor%d'%(i))
     
 for i in range(dataNums):
     plt.plot(np.reshape(targetData[i],-1),label='targetData%d'%(i))
