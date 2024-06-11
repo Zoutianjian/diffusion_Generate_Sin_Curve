@@ -183,7 +183,7 @@ except:
 mainModel = mainModel.to(device)
 
 dataNums = 1
-blankLength = 40
+blankLength = 20
 blankNums = 4
 starts = [[random.randint(0,length-blankLength-2) for j in range(blankNums)] for i in range(dataNums)]
 
